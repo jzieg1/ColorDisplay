@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zieg.colordisplay.MainActivity"
+    android:id="@+id/activity_main">
+
+
+    <Button
+        android:id="@+id/bBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/black"
+        android:onClick="onClickChangeColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bBlack"
+        android:layout_toEndOf="@+id/bBlack"
+        android:background="@color/white"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bWhite"
+        android:layout_toEndOf="@+id/bWhite"
+        android:background="@color/red"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bLime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bRed"
+        android:layout_toEndOf="@+id/bRed"
+        android:background="@color/lime"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bBlack"
+        android:layout_below="@+id/bBlack"
+        android:background="@color/blue"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bWhite"
+        android:layout_toEndOf="@+id/bBlue"
+        android:background="@color/yellow"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bCyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bRed"
+        android:layout_toEndOf="@+id/bYellow"
+        android:background="@color/cyan"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bMagenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bLime"
+        android:layout_toEndOf="@+id/bCyan"
+        android:background="@color/magenta"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bSilver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bBlue"
+        android:layout_below="@+id/bBlue"
+        android:background="@color/silver"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bSilver"
+        android:layout_toEndOf="@+id/bBlue"
+        android:background="@color/gray"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bMaroon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bGray"
+        android:layout_toStartOf="@+id/bMagenta"
+        android:background="@color/maroon"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bOlive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bMagenta"
+        android:layout_toEndOf="@+id/bMaroon"
+        android:background="@color/olive"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bSilver"
+        android:layout_below="@+id/bSilver"
+        android:background="@color/green"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bPurple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bGray"
+        android:layout_toEndOf="@+id/bGreen"
+        android:background="@color/purple"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bTeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bMaroon"
+        android:layout_toEndOf="@+id/bPurple"
+        android:background="@color/teal"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/bNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bOlive"
+        android:layout_toEndOf="@+id/bTeal"
+        android:background="@color/navy"
+        android:onClick="onClickChangeColor"/>
+
+    <Button
+        android:id="@+id/cycleColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bNavy"
+        android:layout_alignStart="@+id/bGreen"
+        android:layout_below="@+id/bGreen"
+        android:layout_marginTop="66dp"
+        android:text="Cycle all colors"
+        android:onClick="onClickCycleColor"/>
+
+    <TextView
+        android:id="@+id/secondSelectionLabel"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cycleColors"
+        android:layout_below="@+id/cycleColors"
+        android:layout_marginTop="51dp"
+        android:text="Number of seconds to display each color when cycling:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/secondSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/secondSelectionLabel"
+        android:layout_toEndOf="@+id/secondSelectionLabel"
+        android:layout_marginStart="22dp" />
+</RelativeLayout>
